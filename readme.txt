@@ -2,6 +2,10 @@ Install-Package EntityFramework
 
 -- Swagger -- Install-Package Swashbuckle
 
+-- Para poder usa inyección de dependencias --
+Install-Package Unity
+Install-Package Unity.WebApi
+
 
 Para crear la BD
 Enable-Migrations
