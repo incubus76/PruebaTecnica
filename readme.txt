@@ -26,3 +26,8 @@ git init
 git commit -m "Initial commit - Web API 2 CRUD"
 git branch -M main      # Crea la rama main
 git push -u origin main # Sube el commit inicial
+
+-- Para test ---
+Install-Package NUnit
+Install-Package NUnit3TestAdapter
+Install-Package Moq

@@ -16,7 +16,7 @@ namespace PruebaTecnica
             // register all your components with the container here
             // Registra DbContext y repositorio
             container.RegisterType<MiDbContext>(new HierarchicalLifetimeManager());
-            container.RegisterType<IProductoRepository, ProductoRepository>();
+            container.RegisterType<IProductoRepository, ProductoRepositoryFake>();
             // it is NOT necessary to register your controllers
 
             // e.g. container.RegisterType<ITestService, TestService>();
