@@ -28,6 +28,6 @@ git branch -M main      # Crea la rama main
 git push -u origin main # Sube el commit inicial
 
 -- Para test ---
-Install-Package NUnit
-Install-Package NUnit3TestAdapter
 Install-Package Moq
+Install-Package MSTest.TestFramework
+Install-Package MSTest.TestAdapter
