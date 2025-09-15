@@ -14,9 +14,16 @@ namespace PruebaTecnica
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "ProductoDetalle",
+                url: "productos/{id}",
+                defaults: new { controller = "ProductosMvc", action = "Detalle" },
+                constraints: new { id = @"\d+" } // opcional: solo números
+            );
+
+            routes.MapRoute(
                 name: "ProductosMvc",
                 url: "productos",
-                defaults: new { controller = "ProductosMvc", action = "Index" }
+                defaults: new { controller = "ProductosMvc", action = "Index"}
             );
 
             routes.MapRoute(

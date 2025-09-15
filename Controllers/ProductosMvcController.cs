@@ -18,5 +18,15 @@ namespace PruebaTecnica.Controllers
             var productos = _repo.ObtenerTodos();
             return View("~/Views/Productos/Index.cshtml", productos);
         }
+
+        // GET: /productos/1
+        public ActionResult Detalle(int id)
+        {
+            var producto = _repo.ObtenerPorId(id);
+            if (producto == null)
+                return HttpNotFound();
+
+            return View("~/Views/Productos/Detalle.cshtml", producto);
+        }
     }
 }
